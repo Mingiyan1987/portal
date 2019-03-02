@@ -3,6 +3,7 @@
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/AbstractEntity.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/service/CompanyService.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/App.java
+/Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/controller/IndexController.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/Ad.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/repository/CompanyRepository.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/Category.java
@@ -10,5 +11,3 @@
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/configuration/AppInitializer.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/configuration/WebAppInitializer.java
-/Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/controller/CompanyController.java
-/Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/controller/HelloController.java

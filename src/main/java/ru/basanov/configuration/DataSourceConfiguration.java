@@ -21,7 +21,7 @@ import java.util.Properties;
  */
 
 @EnableTransactionManagement
-@ComponentScans(value = {@ComponentScan("ru.basanov")})
+@ComponentScan("ru.basanov")
 @EnableJpaRepositories("ru.basanov.repository")
 @PropertySource("classpath:db-conf.properties")
 public class DataSourceConfiguration {
