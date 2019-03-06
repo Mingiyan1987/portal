@@ -18,9 +18,6 @@ import java.util.Locale;
 @Controller
 public class IndexController {
 
-    @Autowired
-    private MessageSource messageSource;
-
     @GetMapping(value = "/")
     public String index() {
         System.out.println("INDEX PAGE...");
@@ -31,21 +28,6 @@ public class IndexController {
     public String login() {
         System.out.println("Login");
         return "login";
-    }
-
-    @GetMapping(value = "/logout")
-    public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (authentication != null) {
-            new SecurityContextLogoutHandler().logout(request, response, authentication);
-        }
-        return "redirect:/";
-    }
-
-    @GetMapping(value = "/loginfailed")
-    public String loginFailed(RedirectAttributes redirectAttributes, Locale locale) {
-        redirectAttributes.addFlashAttribute("message", messageSource.getMessage("login_failed", new Object[]{}, locale));
-        return "redirect:/login";
     }
 
     @GetMapping(value = "/free")

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AdminController {
 
-    @GetMapping("admin")
+    @GetMapping("/admin")
     @Secured({"ROLE_ADMINISTRATOR"})
     public String admin() {
         System.out.println("admin");
