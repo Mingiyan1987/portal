@@ -26,13 +26,16 @@ public class User extends AbstractEntity {
     @Column(name = "password")
     private String passwordHash;
 
-    @ManyToOne
-    @JoinColumn(name = "ad_id")
-    private List<Ad> ads;
-
-
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Role> roles = new ArrayList<>();
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 
     @Override
     public <T> T getEntity(TypedQuery<T> query) {

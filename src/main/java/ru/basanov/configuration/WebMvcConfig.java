@@ -46,19 +46,20 @@ public class WebMvcConfig extends WebSecurityConfigurerAdapter implements WebMvc
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/free").setViewName("free");
-        registry.addViewController("/admin").setViewName("admin");
+        registry.addViewController("/login").setViewName("login");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
 
+                .antMatchers("/").permitAll()
                 .antMatchers("/free").permitAll()
-                .antMatchers("/admin").hasRole(RoleType.ADMINISTRATOR.name())
                 .anyRequest().hasAnyRole(RoleType.USER.name(), RoleType.ADMINISTRATOR.name())
 
                 .and()
                 .formLogin()
+                .loginPage("/login")
                 .and()
                 .logout().permitAll()
                 .logoutSuccessUrl("/login")

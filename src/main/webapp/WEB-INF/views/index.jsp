@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<h1>Index</h1>
+
 <sec:authorize access="isAuthenticated()">
     <p>USER: <sec:authentication property="username"/></p>
 </sec:authorize>
@@ -23,13 +25,13 @@
 
 <sec:authorize access="!isAuthenticated()">
     <p>
-        <<a href="/login">GOTO LOGIN</a>
+        <a href="/login">GOTO LOGIN</a>
     </p>
 </sec:authorize>
 
 <sec:authorize access="hasRole('ADMINISTRATOR')">
     <p>
-        <<a href="/admin">GOTO ADMIN PAGE</a>
+        <a href="/admin">GOTO ADMIN PAGE</a>
     </p>
 </sec:authorize>
 

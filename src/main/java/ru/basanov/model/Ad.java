@@ -21,10 +21,6 @@ public class Ad extends AbstractEntity{
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category; // связь с категорией
 

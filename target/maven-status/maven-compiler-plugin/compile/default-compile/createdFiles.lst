@@ -14,6 +14,7 @@ ru/basanov/configuration/ApplicationConfiguration.class
 ru/basanov/controller/IndexController.class
 ru/basanov/model/User.class
 ru/basanov/service/UserDetailsServiceBean.class
+ru/basanov/controller/AdminController.class
 ru/basanov/configuration/DataSourceConfiguration.class
 ru/basanov/service/UserService.class
 ru/basanov/model/Role.class

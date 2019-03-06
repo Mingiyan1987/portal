@@ -25,6 +25,7 @@ public class UserDetailsServiceBean implements UserDetailsService {
         final User user = findByLogin(username);
         if (user == null) throw new UsernameNotFoundException("User not found");
         org.springframework.security.core.userdetails.User.UserBuilder builder = null;
+        builder = org.springframework.security.core.userdetails.User.withUsername(username);
         builder.password(user.getPasswordHash());
         final List<Role> userRoles = user.getRoles();
         final List<String> roles = new ArrayList<>();

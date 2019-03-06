@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -17,7 +18,8 @@ public class Role extends AbstractEntity {
     @Id
     private String id = UUID.randomUUID().toString();
 
-    @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @Column
