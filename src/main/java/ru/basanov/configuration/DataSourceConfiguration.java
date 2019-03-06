@@ -1,10 +1,7 @@
 package ru.basanov.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -20,6 +17,7 @@ import java.util.Properties;
  * @author Mingiyan Basanov
  */
 
+@Configuration
 @EnableTransactionManagement
 @ComponentScan("ru.basanov")
 @EnableJpaRepositories("ru.basanov.repository")
