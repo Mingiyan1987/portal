@@ -7,29 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feca5dab-6873-4aa6-b4da-ec6503ab5af7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/ajax/AdAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/ajax/AdAjax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/AdController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/model/AbstractEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/AdService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/CategoryService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/CompanyService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserDetailsServiceBean.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db-conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db-conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db-conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db-conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/ajax/AdAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/ajax/AdAjax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/db-conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/db-conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/ajax/AdAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/ajax/AdAjax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/WebMvcConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,11 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/db-conf.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/model/AbstractEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -94,19 +86,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#1829#1830#0" expanded="true" />
-                <element signature="e#1885#1886#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -701,12 +680,12 @@
       <workItem from="1564296558178" duration="2391000" />
       <workItem from="1564901742562" duration="279000" />
       <workItem from="1565530874367" duration="677000" />
-      <workItem from="1565533276682" duration="1906000" />
+      <workItem from="1565533276682" duration="2144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101126000" />
+    <option name="totallyTimeSpent" value="101364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,7 +784,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/faces-config.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/DashBoardView.java" />
@@ -1082,8 +1060,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db-conf.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/model/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
