@@ -93,7 +93,7 @@ public class AdController {
         //Если валидация прошла успешно, то задаем категорию вновь созданной статьи
         ad.setCategory(category);
         //Устанавливаем автора
-        //ad.setUser(user);
+        // ad.setUser(user);
         //сохраняем статью
         adService.save(ad);
         //редиректим юзера на главную страницу, выводя сообщение об успехе добавления статьи
@@ -175,7 +175,7 @@ public class AdController {
 
         Page<Ad> adPage = adService.getALL(pageable);
 
-        AdAjax responsive =new  AdAjax();
+        AdAjax responsive = new AdAjax();
         //из объекта Page возвращаем итератор и с помощью библиотеки google guava создаем списочный массив
         responsive.setAds(Lists.newArrayList(adPage.iterator()));
 

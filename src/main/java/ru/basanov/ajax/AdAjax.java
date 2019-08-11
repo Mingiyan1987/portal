@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import ru.basanov.model.Ad;
 
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
