@@ -4,11 +4,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
+import java.util.Optional;
 
 public abstract class AbstractEntity {
 
     @PersistenceContext
     protected EntityManager entityManager;
+    private Optional<Category> category;
 
     public <T> T getEntity(TypedQuery<T> query) {
         final List<T> resultList = query.getResultList();

@@ -1,5 +1,6 @@
 package ru.basanov.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,7 +23,8 @@ public class Category extends AbstractEntity{
     @Column(name = "name_category")
     private String nameCategory;
 
-    @OneToMany(mappedBy = "category")
+    @JsonIgnore
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     private List<Ad> ads;
 
     public Category(String nameCategory) {

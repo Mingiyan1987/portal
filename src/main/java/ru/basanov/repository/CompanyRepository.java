@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import ru.basanov.model.Company;
 
 @Repository
-public interface CompanyRepository extends CrudRepository<Company, String>, JpaRepository<Company, String>, PagingAndSortingRepository<Company, String> {
+public interface CompanyRepository extends PagingAndSortingRepository<Company, Long>{
 
 }

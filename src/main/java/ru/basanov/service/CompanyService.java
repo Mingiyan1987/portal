@@ -20,7 +20,7 @@ public class CompanyService {
     }
 
     @Transactional(readOnly = true)
-    public Optional<Company> findById(String s) {
+    public Optional<Company> findById(Long s) {
         return companyRepository.findById(s);
     }
 
@@ -28,7 +28,7 @@ public class CompanyService {
         return companyRepository.saveAll(iterable);
     }
 
-    public boolean existsById(String s) {
+    public boolean existsById(Long s) {
         return companyRepository.existsById(s);
     }
 
@@ -36,7 +36,7 @@ public class CompanyService {
         return companyRepository.findAll();
     }
 
-    public Iterable<Company> findAllById(Iterable<String> iterable) {
+    public Iterable<Company> findAllById(Iterable<Long> iterable) {
         return companyRepository.findAllById(iterable);
     }
 
@@ -44,7 +44,7 @@ public class CompanyService {
         return companyRepository.count();
     }
 
-    public void deleteById(String s) {
+    public void deleteById(Long s) {
         companyRepository.deleteById(s);
     }
 
