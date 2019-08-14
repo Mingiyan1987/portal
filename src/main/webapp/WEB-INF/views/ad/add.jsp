@@ -52,7 +52,6 @@
 
 
 
-
         <div class="cleaner_h40"><!-- a spacing between 2 posts --></div>
 
     </div>
@@ -60,7 +59,29 @@
     <div class="cleaner_h40"></div>
 
 </div>
-
+    <form:form modelAttribute="ad" class="add_ad_form" method="POST" action="${contextPath}/ads">
+        <h2 class="message">Создание статьи</h2>
+        <strong class="add_category">Категория</strong>
+        <select id="categoryId" name="categoryId" class="cd-select">
+            <c:if test="${not empty categories}">
+                <option value="0" selected>Выберите категорию</option>
+                <c:forEach items="${categories}" var="category">
+                    <option value="${category.id}">${category.name}</option>
+                </c:forEach>
+            </c:if>
+        </select>
+        <p>
+            <form:label path="title" class="add_title">Заголовок*</form:label>
+            <form:input path="title" type="text" class="add_title_iput"/>
+        <p style="padding-top: 50px;">
+        <form:textarea path="content" id="content" class="contentarea"></form:textarea>
+        <div class="author_add">
+            <span class="author_info_title">Данные автора*</span>
+            <form:input path="author.firstname" type="text" placeholder="Имя" class="add_author_firstname"/>
+            <form:input path="author.lastname" type="text" placeholder="Фамилия" name="add_author_lastname"/>
+        </div>
+        <input type="submit" class="button_sub" value="Опубликовать"/>
+    </form:form>
 <div class="cleaner"></div>
 </div> <!-- end of content wrapper -->
 

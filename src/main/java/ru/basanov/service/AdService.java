@@ -54,6 +54,13 @@ public class AdService {
         return adRepository.findById(id);
     }
 
+    @Transactional(readOnly = true)
+    public Page<Ad> getByCatgoryId(Long id, Pageable pageable) {
+        Page<Ad> ads = adRepository.findByCategoryId(id, pageable);
+        return ads;
+    }
+
+
     public Optional<Ad> findById(Long s) {
         return adRepository.findById(s);
     }
