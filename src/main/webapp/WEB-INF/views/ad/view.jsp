@@ -18,8 +18,7 @@
 ​<div​ ​class​=​'post_section view'>
 ​<h2><a​ ​class​=​'ad__title'​ ​href​=​''​ ​></a>​${ad.title}​</h2>
 ​<strong>​Дата: ​</span></strong>
-<span class​=​'ad__date'​
->​<fmt:formatDate pattern="yyyy-MM-dd" value​=​"${ad.publishedDate}"​ ​/></​span​>​ ​|​ ​<strong>​Автор:
+<span class​=​'ad__date'​>​<fmt:formatDate pattern="yyyy-MM-dd" value​=​"${ad.publishedDate}"​ ​/></​span​>​ ​|​ ​<strong>​Автор:
     <​/strong> <span class='ad__author'>${ad.author.firstname}</​span> ​<div​ ​class​=​"cleaner"​></div>
     ​<p><div​ ​class​=​'ad__content view'​>​${ad.content}​</div> ​<div​ ​class​=​'cleaner'​></div>
     ​<p><div​ ​class​=​'category view'​>​Категория:

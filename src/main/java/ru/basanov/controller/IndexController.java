@@ -18,7 +18,7 @@ import java.util.Locale;
 @Controller
 public class IndexController {
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/index")
     public String index() {
         System.out.println("INDEX PAGE...");
         return "index";
