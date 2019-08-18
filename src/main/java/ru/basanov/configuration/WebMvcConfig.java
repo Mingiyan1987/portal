@@ -51,7 +51,7 @@ public class WebMvcConfig extends WebSecurityConfigurerAdapter implements WebMvc
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
 
-                .antMatchers("/").permitAll()
+                .antMatchers("/admin").permitAll()
                 .antMatchers("/free").permitAll()
                 .anyRequest().hasAnyRole(RoleType.USER.name(), RoleType.ADMINISTRATOR.name())
 

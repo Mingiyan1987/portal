@@ -18,7 +18,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Форма добавления статьи</title>
-    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="/>
 </head>
 <body>
 <div id="templatemo_header_wrapper">
@@ -74,12 +74,6 @@
             <form:label path="title" class="add_title">Заголовок*</form:label>
             <form:input path="title" type="text" class="add_title_iput"/>
         <p style="padding-top: 50px;">
-        <form:textarea path="content" id="content" class="contentarea"></form:textarea>
-        <div class="author_add">
-            <span class="author_info_title">Данные автора*</span>
-            <form:input path="author.firstname" type="text" placeholder="Имя" class="add_author_firstname"/>
-            <form:input path="author.lastname" type="text" placeholder="Фамилия" name="add_author_lastname"/>
-        </div>
         <input type="submit" class="button_sub" value="Опубликовать"/>
     </form:form>
 <div class="cleaner"></div>
