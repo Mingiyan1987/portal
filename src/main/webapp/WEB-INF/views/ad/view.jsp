@@ -1,28 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mingiyan
-  Date: 05/03/2019
-  Time: 08:40
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
-<%@ page session="false" %>
-<html>
-<head>
-    <title>Форма просмотра статьи</title>
-</head>
-<body>
-<c:if​ ​test​=​"${not empty ad}"​>
-​<div​ ​class​=​'post_section view'>
-​<h2><a​ ​class​=​'ad__title'​ ​href​=​''​ ​></a>​${ad.title}​</h2>
-​<strong>​Дата: ​</span></strong>
-<span class​=​'ad__date'​>​<fmt:formatDate pattern="yyyy-MM-dd" value​=​"${ad.publishedDate}"​ ​/></​span​>​ ​|​ ​<strong>​Автор:
-    <​/strong> <span class='ad__author'>${ad.author.firstname}</​span> ​<div​ ​class​=​"cleaner"​></div>
-    ​<p><div​ ​class​=​'ad__content view'​>​${ad.content}​</div> ​<div​ ​class​=​'cleaner'​></div>
-    ​<p><div​ ​class​=​'category view'​>​Категория:
-    <span>​${ad.category.name}​</span></div> ​</div>
-    ​</c:if>
-</body>
-</html>
+<%@ page language​=​"java" contentType​=​"text/html; charset=UTF-8" pageEncoding​=​"UTF-8"​%>
+<%@​ taglib uri​=​"http://java.sun.com/jsp/jstl/core"​ prefix​=​"c"​%>
+<%@​ taglib uri​=​"http://www.springframework.org/tags/form"​ prefix​=​"form"​%>
+<%@​ taglib prefix​=​"fmt"​ uri​=​"http://java.sun.com/jsp/jstl/fmt"​ %>
+<c:set​ ​value​=​"${pageContext.request.contextPath}"​ ​var​=​"contextPath"​ ​/> <c:set​ ​value​=​"${contextPath}/resources"​ ​var​=​"resPath"​ ​/>
+<c:if​ ​test​=​"${not empty article}"​>
+​<h2><a​ ​class​=​'article__title'​ ​href​=​''​ ​></a>​${article.title}​</h2> ​<strong>​Дата: ​</span></strong><span
+class​=​'article__date'​>​<fmt:formatDate pattern="yyyy-MM-dd" value​=​"${article.publishedDate}" ​/></​span​> ​| ​<strong>​Автор:
+<​/strong> <span class='article__author'>${article.author.firstname}</​span> ​<div​ ​class​=​"cleaner"​></div>
+​<p><div​ ​class​=​'article__content view'​>​${article.content}​</div> ​<div​ ​class​=​'cleaner'​></div>
+​<p><div ​class​=​'category view'​>​Категория: <span>​${article.category.name}​</span></div>
+</c:if>
