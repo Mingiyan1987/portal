@@ -18,21 +18,9 @@ import java.util.Locale;
 @Controller
 public class IndexController {
 
-    @GetMapping(value = "/index")
-    public String index() {
-        System.out.println("INDEX PAGE...");
-        return "index";
-    }
-
     @GetMapping(value = "/login")
-    public String login() {
+    public String showMyloginPage() {
         System.out.println("Login");
-        return "login";
-    }
-
-    @GetMapping(value = "/free")
-    public String free() {
-        System.out.println("free");
-        return "free";
+        return "modern-login";
     }
 }

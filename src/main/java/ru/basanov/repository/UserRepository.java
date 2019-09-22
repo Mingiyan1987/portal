@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import ru.basanov.model.User;
 
 @Repository
-public interface UserRepository extends PagingAndSortingRepository<User, Long> {
+public interface UserRepository extends PagingAndSortingRepository<User, String> {
 
-    User findByLogin(String login);
+    User findByUsername(String username);
 }

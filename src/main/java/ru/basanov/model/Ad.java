@@ -28,9 +28,9 @@ public class Ad extends AbstractEntity{
     @JoinColumn(name = "company_id")
     private Company company; // связь с компанией
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "author_id")
-    private User user;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user; // связь с пользователем
 
     @Column(name = "title")
     private String title;

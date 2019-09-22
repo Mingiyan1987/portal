@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@​ page language​=​"java"​ contentType​=​"text/html; charset=UTF-8" pageEncoding​=​"UTF-8"​%>
 <%@​ taglib uri​=​"http://java.sun.com/jsp/jstl/core"​ prefix​=​"c"​%>
 <%@​ taglib uri​=​"http://www.springframework.org/tags/form"​ prefix​=​"form"​%>
@@ -15,7 +16,7 @@ method​=​"POST"​ ​action​=​"${contextPath}/articles"​>
 ​<option​ ​value​=​"${category.id}"​>​${category.name}​</option>
 ​</c:forEach> ​</c:if>
 ​</select>
-​<p><form:label ​path​=​"title" class​=​"add_title"​>​Заголовок*​</form:label><form:input ​type​=​"text" ​path​=​"title"
+​<p><form:label ​path​=​"title" class​=​"add_title"​>​Заголовок*​</form:label>form:<form:input ​type​=​"text" ​path​=​"title"
 class​=​"add_title_input"​ ​/>
 ​<form:errors​ ​path​=​"title"​ ​cssClass​=​"error"​ ​/> ​<p​ ​style​=​"​padding​-​top​:​50px​;​">
 ​<form:textarea ​path​=​"content" ​id​=​"content" class​=​"contentarea"​></form:textarea>

@@ -87,7 +87,7 @@ public class AdController {
         //Получаем логин пользователя, публикующего статью
         String currentLogin = SecurityContextHolder.getContext().getAuthentication().getName();
         //По логину находим автора
-        User user = userService.findByLogin(currentLogin);
+        User user = userService.findByUserName(currentLogin);
         //Ищем категорию по id категории
         Category category = categoryService.get(categoryId);
         //Если валидация прошла успешно, то задаем категорию вновь созданной статьи
