@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tiles-definitions>
+        <definition name="security/registration" template="/WEB-INF/views/security/default.jsp">
+            <put-attribute name="content" value="/WEB-INF/views/author/registration.jsp"></put-attribute>
+        </definition>
+</tiles-definitions>

@@ -25,7 +25,7 @@ public class Category extends AbstractEntity{
 
     @JsonIgnore
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
-    private List<Ad> ads;
+    private List<Article> articles;
 
     public Category(String nameCategory) {
         this.nameCategory = nameCategory;

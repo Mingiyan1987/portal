@@ -19,10 +19,8 @@ public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String home(Model uiModel) {
-
         List<Category> categories = categoryService.getAll();
         uiModel.addAttribute("categories", categories);
-
         return "home/main";
     }
 }

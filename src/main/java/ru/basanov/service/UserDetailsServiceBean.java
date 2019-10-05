@@ -6,29 +6,29 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.basanov.model.User;
-import ru.basanov.repository.UserRepository;
+import ru.basanov.model.Author;
+import ru.basanov.repository.AuthorRepository;
 
 @Service("userDetailService")
 public class UserDetailsServiceBean implements UserDetailsService {
 
     @Autowired
-    private UserRepository userRepository;
+    private AuthorRepository authorRepository;
 
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        final User user = findByUsername(username);
-        if (user == null) throw new UsernameNotFoundException("User not found");
+        final Author author = findByUsername(username);
+        if (author == null) throw new UsernameNotFoundException("Author not found");
         org.springframework.security.core.userdetails.User.UserBuilder builder = null;
         builder = org.springframework.security.core.userdetails.User.withUsername(username);
-        builder.password(user.getPassword());
+        builder.password(author.getPassword());
         return builder.build();
     }
 
-    private User findByUsername(String username) {
-        if (username == null || username.isEmpty()) return null;
-        return userRepository.findByUsername(username);
+    private Author findByUsername(String login) {
+        if (login== null || login.isEmpty()) return null;
+        return authorRepository.findByLogin(login);
 
     }
 }

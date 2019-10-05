@@ -31,7 +31,7 @@ public class Company extends AbstractEntity{
 
     @JsonIgnore
     @OneToMany(mappedBy = "company", fetch = FetchType.LAZY)
-    private List<Ad> ads;
+    private List<Article> articles;
 
     public Company(String nameCompany) {
         this.nameCompany = nameCompany;
