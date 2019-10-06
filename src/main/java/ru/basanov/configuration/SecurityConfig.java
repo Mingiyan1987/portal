@@ -1,6 +1,7 @@
 package ru.basanov.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.annotation.Order;
@@ -10,6 +11,8 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -23,17 +26,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication().dataSource(dataSource)
-         .usersByUsernameQuery("select a.login, password, true from author where login=?")
-         .authoritiesByUsernameQuery("select a.login, r.name from role r JON author" + "a ON r.id = a.role_id WHERE a.login=?");
+         .usersByUsernameQuery("select login, password from users where login=?")
+         .authoritiesByUsernameQuery("select a.login, r.name from role r JON users " + "a ON r.id = a.role_id WHERE a.login=?");
     }
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers(HttpMethod.GET, "/article/*/edit").hasAuthority("admin")
-                .antMatchers(HttpMethod.GET, "/article/add").hasAnyAuthority("admin", "user")
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/articles/*/edit").hasAuthority("admin")
+                .antMatchers(HttpMethod.GET, "/articles/add").hasAnyAuthority("admin", "user")
                     .and().formLogin().loginPage("/login").loginProcessingUrl("/login")
                 .usernameParameter("login").passwordParameter("password").failureUrl("/loginfailed")
                     .and().logout().logoutSuccessUrl("/");
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+
+        return new BCryptPasswordEncoder();
     }
 }

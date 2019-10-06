@@ -29,6 +29,5 @@ public class UserDetailsServiceBean implements UserDetailsService {
     private Author findByUsername(String login) {
         if (login== null || login.isEmpty()) return null;
         return authorRepository.findByLogin(login);
-
     }
 }

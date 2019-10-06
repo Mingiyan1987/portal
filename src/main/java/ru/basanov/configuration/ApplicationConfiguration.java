@@ -10,8 +10,4 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @ComponentScan("ru.basanov")
 public class ApplicationConfiguration {
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 }

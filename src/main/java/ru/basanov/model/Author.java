@@ -22,7 +22,7 @@ public class Author extends AbstractEntity {
     @Column(name = "id")
     private Long id;
 
-    @Pattern(regexp = "[A-Z][a-zA-Z]", message = "{validation.author.firstname.pattern}")
+    @Pattern(regexp = "[A-Z][a-zA-Z]*", message = "{validation.author.firstname.pattern}")
     @Size(min=2, max = 50, message = "{validation.author.firstnmae.size}")
     @Column(name = "firstname", unique = true)
     private String firstname;
@@ -40,7 +40,7 @@ public class Author extends AbstractEntity {
     @Column(name = "login")
     private String login;
 
-    @Pattern(regexp = ".{8,}", message = "{validation.author.password.pattern")
+    @Pattern(regexp = ".{8,}", message = "{validation.author.password.pattern}")
     @Column(name = "password")
     private String password;
 

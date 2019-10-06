@@ -12,6 +12,7 @@
          pageEncoding="UTF-8" %>
 
 <c:set value="${pageContext.request.contextPath}" var="contextPath"/>
+<c:set value="${contextPath}/resources" var="resPath"/>
 <section class="container">
     <div class="login">
         <h1>${authorReg}</h1>
@@ -19,13 +20,11 @@
             <span class="error">${message}</span>
             <p/>
         </c:if>
-            <form:form modelAttribute="author" action="${contextPath}/registration" method="POST">
+            <form:form modelAttribute="author" action="/registration" method="POST">
                 <p>${labelFirstName}: <form:input path="firstname" value="" placeholder="${labelFirstName}"/></p>
                 <form:errors path="firstname" cssClass="error"/>
                 <p>${labelLastName}: <form:input path="lastname" value="" placeholde="${labelLastName}"/></p>
                 <form:errors path="lastname" cssClass="error" />
-                <p>${labelAuthorEmail}: <form:input path="email" value="" placeholder="${labelAtuhorEmail}"/></p>
-                <form: errors path="email" cssClass="error"/>
                 <p>${labelLogin}: <form:input path="login" type="text" placeholder="${labelLogin}"/></p>
                 <form:errors path="login" cssClass="error"/>
                 <p>${labelPass}: <form:input path="password" type="password" placeholder="${labelPass}"/></p>

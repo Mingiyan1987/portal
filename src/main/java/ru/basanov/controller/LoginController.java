@@ -39,4 +39,8 @@ public class LoginController {
         redirectAttributes.addFlashAttribute("message", messageSource.getMessage("login_falied", new Object[]{}, locale));
         return "redirect:/login";
     }
+
+    //@RequestMapping(value = "/login", method = RequestMethod.POST)
+    
+        // TO DO  написать метод для обработки POST запроса с данными пользователя
 }

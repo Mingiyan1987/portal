@@ -38,9 +38,6 @@ public class ArticleController {
     private ArticleService articleService;
 
     @Autowired
-    private CompanyService companyService;
-
-    @Autowired
     private CategoryService categoryService;
 
     @Autowired
@@ -81,7 +78,6 @@ public class ArticleController {
                     //и добавляем сообщение о результате добавления статьи
                     .addAttribute("message",messageSource.getMessage("article_create_fail", new Object[]{}, locale) );
             return "article/add";
-
         }
         //Получаем логин пользователя, публикующего статью
         String currentLogin = SecurityContextHolder.getContext().getAuthentication().getName();
