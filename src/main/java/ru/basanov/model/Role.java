@@ -20,7 +20,7 @@ public class Role {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
-    List<Author> authors;
-
+    @ManyToOne
+    @JoinColumn(name = "author_id")
+    private Author author;
 }

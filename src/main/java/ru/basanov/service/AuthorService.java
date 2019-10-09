@@ -1,6 +1,7 @@
 package ru.basanov.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,6 +12,7 @@ import ru.basanov.repository.RoleRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 
 @Service
 public class AuthorService {
@@ -29,20 +31,15 @@ public class AuthorService {
     @PersistenceContext
     private EntityManager entityManager;
 
-    private void initUser(final String username, final String password, final byte tinyint) {
-        final Author author = authorRepository.findByLogin(username);
-        if (author != null) return;
-        createUser(username, password, tinyint);
-    }
-
     @Transactional
-    public void createUser(String login, String password, byte tinyint) {
+    public void createUser(String login, String password) {
         if (login==null || login.isEmpty()) return;
         if (password==null || password.isEmpty()) return;
         final String passwordHash = passwordEncoder.encode(password);
         final Author author = new Author();
-        author.setLogin(login);
+        final byte tinyint = 1;
         author.setPassword(passwordHash);
+        author.setLogin(login);
         author.setTinyint(tinyint);
         authorRepository.save(author);
     }
@@ -65,8 +62,8 @@ public class AuthorService {
 
     @Transactional
     public void save(Author author) {
-        Role role = roleRepository.findByName(DEFAULT_ROLE_NAME);
-        author.setRole(role);
+        List<Role> role = (List<Role>) roleRepository.findByName(DEFAULT_ROLE_NAME);
+        author.setRoles(role);
         authorRepository.save(author);
     }
 

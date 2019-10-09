@@ -7,23 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feca5dab-6873-4aa6-b4da-ec6503ab5af7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/ApplicationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/AuthorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/service/AuthorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserDetailsServiceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserDetailsServiceBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/security/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/ApplicationConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/ApplicationConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/service/UserDetailsServiceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/service/UserDetailsServiceBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/ApplicationConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/ApplicationConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/author/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/author/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/service/UserDetailsServiceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/service/UserDetailsServiceBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/home/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/home/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/security/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/security/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,9 +45,9 @@
         <option value="spring-beans.schema" />
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="XSLT Stylesheet" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -382,7 +383,13 @@
       <workItem from="1570304739139" duration="54000" />
       <workItem from="1570340737370" duration="2898000" />
       <workItem from="1570345950449" duration="1145000" />
-      <workItem from="1570350945115" duration="5833000" />
+      <workItem from="1570350945115" duration="11018000" />
+      <workItem from="1570374393704" duration="4258000" />
+      <workItem from="1570384146205" duration="5823000" />
+      <workItem from="1570392393207" duration="2291000" />
+      <workItem from="1570551954375" duration="492000" />
+      <workItem from="1570596977876" duration="1101000" />
+      <workItem from="1570638503090" duration="5571000" />
     </task>
     <servers />
   </component>

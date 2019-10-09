@@ -2,6 +2,7 @@ package ru.basanov.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -24,6 +25,9 @@ public class AuthorController {
     @Autowired
     private MessageSource messageSource;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registrationForm(Model uiModel) {
         Author author = new Author();
@@ -33,7 +37,6 @@ public class AuthorController {
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String registration(@ModelAttribute("author") @Valid Author author, BindingResult bindingResult, Model uiModel, RedirectAttributes redAttributes, Locale locale) {
-        System.out.println(bindingResult.toString());
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("message", messageSource.getMessage("author_create_fail", new Object[]{}, locale));
             return "author/registration";
@@ -42,7 +45,7 @@ public class AuthorController {
             uiModel.addAttribute("message", messageSource.getMessage("author_login_exist", new Object[]{}, locale));
             return "author/registration";
         }
-        authorService.save(author);
+        authorService.createUser(author.getLogin(), passwordEncoder.encode(author.getPassword()));
         return "redirect:/";
     }
 }

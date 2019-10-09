@@ -40,16 +40,14 @@ public class Author extends AbstractEntity {
     @Column(name = "login")
     private String login;
 
-    @Pattern(regexp = ".{8,}", message = "{validation.author.password.pattern}")
     @Column(name = "password")
     private String password;
 
     @Column(name = "enabled")
     private byte tinyint;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role;
+    @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
+    private List<Role> roles;
 
     @JsonIgnore
     @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
