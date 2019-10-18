@@ -7,25 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feca5dab-6873-4aa6-b4da-ec6503ab5af7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/application_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/application_ru.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/message_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/message_ru.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/SecurityConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/controller/ArticleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/service/AuthorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserDetailsServiceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserDetailsServiceBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/service/UserDetailsServiceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/security/UserDetailsServiceBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/security/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/configuration/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/service/UserDetailsServiceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/basanov/service/UserDetailsServiceBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/basanov/service/UserDetailsServiceBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/configuration/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/service/UserDetailsServiceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/service/UserDetailsServiceBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/classes/ru/basanov/service/UserDetailsServiceBean.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/home/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/home/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/security/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/portal-1.0-SNAPSHOT/WEB-INF/views/security/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +47,8 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="XSLT Stylesheet" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,17 +85,17 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/security" />
-      <recent name="$PROJECT_DIR$/src/main/java/ru/basanov/configuration" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/assets/ckeditor" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/security" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/basanov/configuration" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/assets/ckeditor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -389,7 +390,19 @@
       <workItem from="1570392393207" duration="2291000" />
       <workItem from="1570551954375" duration="492000" />
       <workItem from="1570596977876" duration="1101000" />
-      <workItem from="1570638503090" duration="5571000" />
+      <workItem from="1570638503090" duration="5862000" />
+      <workItem from="1570683307591" duration="1205000" />
+      <workItem from="1570812512008" duration="6000" />
+      <workItem from="1570858394690" duration="452000" />
+      <workItem from="1571077213311" duration="1599000" />
+      <workItem from="1571115058447" duration="1577000" />
+      <workItem from="1571157306719" duration="1649000" />
+      <workItem from="1571161195598" duration="513000" />
+      <workItem from="1571161938880" duration="301000" />
+      <workItem from="1571162919898" duration="202000" />
+      <workItem from="1571165136110" duration="1291000" />
+      <workItem from="1571202000709" duration="1178000" />
+      <workItem from="1571412938609" duration="3090000" />
     </task>
     <servers />
   </component>

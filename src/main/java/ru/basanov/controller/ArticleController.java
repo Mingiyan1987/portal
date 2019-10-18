@@ -28,7 +28,6 @@ import java.util.Locale;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("/articles")
 public class ArticleController {
 
     @Autowired
@@ -88,7 +87,7 @@ public class ArticleController {
         //Если валидация прошла успешно, то задаем категорию вновь созданной статьи
         article.setCategory(category);
         //Устанавливаем автора
-        // article.setAuthor(author);
+        article.setAuthor(author);
         //сохраняем статью
         articleService.save(article);
         //редиректим юзера на главную страницу, выводя сообщение об успехе добавления статьи

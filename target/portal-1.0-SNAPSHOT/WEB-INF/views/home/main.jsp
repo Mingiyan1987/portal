@@ -17,6 +17,7 @@
     var contextPath = "${contextPath}";
 </script>
 <script src="${resPath}/assets/getData.js"></script>
+
     <div id="tempatemo_menu">
         <ul id="panel_reff">
             <li><a href="${contextPath}">${labelHome}</a></li>

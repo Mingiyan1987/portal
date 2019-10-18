@@ -1,3 +1,4 @@
+/Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/security/UserDetailsServiceBean.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/Company.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/configuration/AppConfig.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/AbstractEntity.java
@@ -11,7 +12,6 @@
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/service/ArticleService.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/Author.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/model/Authorities.java
-/Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/service/UserDetailsServiceBean.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/configuration/SecurityConfig.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/service/CategoryService.java
 /Users/mingiyan/IdeaProjects/portal/src/main/java/ru/basanov/service/CompanyService.java

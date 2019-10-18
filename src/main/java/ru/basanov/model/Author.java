@@ -22,8 +22,8 @@ public class Author extends AbstractEntity {
     @Column(name = "id")
     private Long id;
 
-    @Pattern(regexp = "[A-Z][a-zA-Z]*", message = "{validation.author.firstname.pattern}")
-    @Size(min=2, max = 50, message = "{validation.author.firstnmae.size}")
+    @Pattern(regexp = "[A-Z][a-zA-z]*", message = "{validation.author.firstname.pattern}")
+    @Size(min=2, max = 50, message = "{validation.author.firstname.size}")
     @Column(name = "firstname", unique = true)
     private String firstname;
 

@@ -10,7 +10,6 @@ ru/basanov/repository/CompanyRepository.class
 ru/basanov/service/CompanyService.class
 ru/basanov/repository/CategoryRepository.class
 ru/basanov/configuration/ApplicationConfiguration.class
-ru/basanov/service/UserDetailsServiceBean.class
 ru/basanov/service/AuthorService.class
 ru/basanov/configuration/DataSourceConfiguration.class
 ru/basanov/model/Role.class
@@ -23,6 +22,7 @@ ru/basanov/model/AbstractEntity.class
 ru/basanov/controller/CategoryController.class
 ru/basanov/repository/RoleRepository.class
 ru/basanov/model/Authorities.class
+ru/basanov/security/UserDetailsServiceBean.class
 ru/basanov/configuration/AppInitializer.class
 ru/basanov/configuration/WebMvcConfig.class
 ru/basanov/repository/AuthorRepository.class
